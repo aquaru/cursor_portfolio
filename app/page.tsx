@@ -2,6 +2,7 @@ import { HeroSection } from "@/components/HeroSection";
 import { BlurFade } from "@/components/BlurFade";
 import { MagicCard } from "@/components/MagicCard";
 import { WorksSection } from "@/components/WorksSection";
+import { ContactSection } from "@/components/ContactSection";
 
 const navItems = ["Home", "About", "Skills", "Portfolio", "Contact"];
 
@@ -67,6 +68,9 @@ export default function Home() {
 
         {/* Works */}
         <WorksSection />
+
+        {/* Contact */}
+        <ContactSection />
 
         {/* Scroll hint */}
         <BlurFade delay={0.1} className="flex items-center justify-center gap-2 pb-8 text-xs text-muted-foreground">
