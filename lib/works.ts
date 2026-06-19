@@ -35,16 +35,6 @@ export const works: Work[] = [
     detailImage: "/work_2_detail.jpg",
     links: [],
   },
-  {
-    slug: "drawing-assist",
-    title: "Drawing assist",
-    summary: "Drawing assist app 모션 및 effect 디자인",
-    description:
-      "Drawing assist 앱의 모션 및 visual effect 디자인을 담당했습니다. 그리기 보조 기능의 등장·전환, 효과 피드백, 사용자 액션에 대한 모션 반응을 설계하여 직관적이고 몰입감 있는 사용 경험을 구현했습니다.",
-    thumbnail: "/work_3.jpg",
-    detailImage: "/work_3_detail.jpg",
-    links: [],
-  },
 ];
 
 export function getWork(slug: string): Work | undefined {
