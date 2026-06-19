@@ -15,8 +15,7 @@ export default function Home() {
     <div className="flex min-h-screen flex-col bg-background p-4 sm:p-6 lg:p-8">
       <div className="mx-auto flex w-full max-w-6xl flex-1 flex-col overflow-hidden rounded-3xl bg-card shadow-xl shadow-primary/5">
         {/* Nav */}
-        <header className="flex items-center justify-between px-6 py-6 sm:px-10">
-          <span className="text-lg font-bold tracking-tight">박경태</span>
+        <header className="flex items-center justify-end px-6 py-6 sm:px-10">
           <nav className="hidden items-center gap-8 md:flex">
             {navItems.map((item, i) => (
               <a
