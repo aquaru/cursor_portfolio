@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { HeroSection } from "@/components/HeroSection";
 import { BlurFade } from "@/components/BlurFade";
 import { MagicCard } from "@/components/MagicCard";
@@ -16,7 +17,22 @@ export default function Home() {
     <div className="flex min-h-screen flex-col bg-background p-4 sm:p-6 lg:p-8">
       <div className="mx-auto flex w-full max-w-6xl flex-1 flex-col overflow-hidden rounded-3xl bg-card shadow-xl shadow-primary/5">
         {/* Nav */}
-        <header className="flex items-center justify-end px-6 py-6 sm:px-10">
+        <header className="flex items-center justify-between px-6 py-6 sm:px-10">
+          <Link
+            href="/brand-kit"
+            className="flex items-center gap-1.5 rounded-xl border border-border bg-muted/40 px-3 py-1.5 text-xs font-medium text-muted-foreground transition-colors hover:border-primary/40 hover:text-primary"
+          >
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <circle cx="13.5" cy="6.5" r="2.5"/>
+              <circle cx="19" cy="13" r="2.5"/>
+              <circle cx="6.5" cy="13" r="2.5"/>
+              <circle cx="13.5" cy="19.5" r="2.5"/>
+              <path d="m15.5 8.5 2 3"/>
+              <path d="m9 13 3 5.5"/>
+              <path d="m9 13-2-3"/>
+            </svg>
+            Brand Kit
+          </Link>
           <nav className="hidden items-center gap-8 md:flex">
             {navItems.map((item, i) => (
               <a
